@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.0), rgba(4, 9, 30, 0.0)), url(images/mountain3.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    align-items: flex-start;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-links ul li {
+    list-style: none;
+    padding: 8px 12px;
+    display: table-header-group;
+    position: marker;
+    line-height: 40px;
+}
+
+.nav-links ul li a {
+    color: midnightblue;
+    text-decoration: aqua;
+    font-size: 20px;
+    font-style: italic;
+    font-palette: dark;
+    font-weight: bold;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: blue;
+    display: block;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box{
+    width:80%;
+    color: black;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    margin: 20px 0 40px;
+    font-size: 15px;
+    color: white;
+}
+
+.hypotalamtam{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border:1px solid aqua;
+    padding:12px 34px;
+    font-size:15px;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+}
+.hypotalamtam:hover{
+    border:1px solid deepskyblue;
+    background: midnightblue;
+    transition: 1s;
+}
+
+.hobby_cl {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.0), rgba(4, 9, 30, 0.0)), url(images/mountainblur.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.text-box-hobby{
+    width:80%;
+    color: mediumpurple;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+     text-shadow: 0 0 3px rebeccapurple, 0 0 5px rebeccapurple;
+}
+.text-box-hobby h1{
+    font-size: 60px;
+}
+.text-box-hobby p{
+    margin: 20px 0 40px;
+    font-size: 15px;
+    color: ghostwhite;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .text-box p {
+        margin: 20px 0 40px;
+        font-size: 10px;
+        color: white;
+    }
+
+    .text-box-hobby h1 {
+        font-size: 20px;
+    }
+
+    .text-box-hobby p {
+        margin: 20px 0 40px;
+        font-size: 15px;
+        color: ghostwhite;
+    }
+}
+
+.allhobby{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.0), rgba(4, 9, 30, 0.0)), url(images/underworld-blur.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    margin:auto;
+}
+.text-box-allhobby{
+    padding-top: inherit;
+    margin-top: auto;
+    margin-bottom: auto;
+    width:40%;
+    color: deepskyblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    text-shadow: 0 0 5px blue, 0 0 5px blue;
+}
+.text-box-allhobby ul li{
+    list-style: none;
+    padding: 3px 12px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+
+.home{
+    display: inline-flex;
+    text-decoration: none;
+    color: darkred;
+    font-weight: bolder;
+    border:1px solid greenyellow;
+    padding:8px 28px;
+    font-size:15px;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+    alignment: center;
+}
+.home:hover{
+    border:1px solid deepskyblue;
+    background: greenyellow;
+    transition: 1s;
+}
+
+@media(max-width: 850px){
+    .text-box-allhobby{
+        padding-top: inherit;
+        margin-top: auto;
+        margin-bottom: auto;
+        width:40%;
+        color: deepskyblue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align:center;
+        text-shadow: 0 0 5px blue, 0 0 5px blue;
+        text-autospace: initial;
+    }
+    .text-box-allhobby ul li{
+        list-style: none;
+        padding: 2px 5px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+}
+.hypotalamus{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.0), rgba(4, 9, 30, 0.0)), url(images/jin_of_alladin.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.text-box-hypo{
+    display:inline-block;
+    border:1px solid darkred;
+    padding:8px 28px;
+    background: rgba(10, 100, 255, 0.7);
+    width:80%;
+    color: black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    text-shadow: 0 0 4px royalblue, 0 0 6px royalblue;
+}
+.text-box-hobby h1{
+    font-size: 30px;
+}
+.text-box-hobby p{
+    margin: 20px 0 40px;
+    font-size: 15px;
+    color: cornflowerblue;
+}
+
+@media (max-width: 850px) {
+    .text-box-hypo{
+        width:60%;
+        padding:4px 24px;
+    }
+    .text-box-hobby h1{
+        font-size: 26px;
+    }
+    .text-box-hobby p{
+        margin: 10px 0 20px;
+        font-size: 10px;
+        color: cornflowerblue;
+    }
+}
+
+.links-hypo{
+    flex: 1;
+    text-align: center;
+    padding-top: 40px;
+}
+.links-hypo ul li{
+    list-style: none;
+    padding: 8px 12px;
+    display: inline-block;
+}
+.links-hypo ul li a{
+    color: darkred;
+    text-shadow: crimson;
+    font-size: 40px;
+    list-style: none;
+    border-bottom-style: none;
+    text-decoration: none ;
+    font-weight: bold;
+}
+.links-hypo ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: red;
+    display: block;
+}
+.links-hypo ul li:hover::after{
+    width: 100%;
+}
+.again{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.0), rgba(4, 9, 30, 0.0)), url(images/izma_and_kronk.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.text-box-again{
+    width:80%;
+    color: navajowhite;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    text-shadow: 0 0 5px hotpink, 0 0 7px hotpink;
+}
+.text-box-again h1{
+    font-size: 15px;
+}
+.text-box-again p{
+    margin: 20px 0 40px;
+    font-size: 15px;
+    color: black;
+}
+
+
+.links-again{
+    flex: 1;
+    text-align: end;
+    padding-top: 10px;
+}
+.links-again ul li{
+    list-style: none;
+    padding: 20px 20px;
+    display: inline-block;
+}
+.links-again ul li a{
+    color: yellow;
+    text-shadow: lightyellow;
+    font-size: 20px;
+    list-style: none;
+    border-bottom-style: none;
+    text-decoration-style: wavy;
+    font-weight: bold;
+}
+.health{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.09)), url(images/background.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.text-box-health{
+    margin-top: 0px;
+    margin-bottom: auto;
+    width:90%;
+    color: mediumvioletred;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    text-shadow: 5px 5px 9px hotpink, 5px 5px 9px hotpink;
+
+}
+.text-box-health h1{
+    font-size: 28px;
+}
+.text-box-health p{
+    margin: 10px 5px 20px;
+    font-size: 18px;
+    color:purple;
+}
+.cry{
+    display: inline-block;
+    text-decoration: none;
+    color: violet;
+    border:1px solid deeppink;
+    padding:40px 34px;
+    font-size:18px;
+    background: transparent;
+    position: center;
+    cursor:pointer;
+}
+.cry:hover{
+    border:1px solid mediumvioletred;
+    background: black;
+    transition: 1s;
+}
+@media(max-width: 700px){
+
+    .text-box-health{
+        margin-bottom: auto;
+        width:90%;
+        color: mediumvioletred;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align:center;
+        text-shadow: 5px 5px 9px hotpink, 5px 5px 9px hotpink;
+
+    }
+    .text-box-health h1{
+        font-size: 20px;
+    }
+    .text-box-health p{
+        margin: 10px 5px 20px;
+        font-size: 15px;
+    }
+    .cry{
+        display: inline-block;
+        text-decoration: none;
+        color: violet;
+        border:1px solid deeppink;
+        padding:20px 27px;
+        font-size:9px;
+        background: transparent;
+        position: center;
+        cursor:pointer;
+    }
+    .cry:hover{
+        border:1px solid mediumvioletred;
+        background: black;
+        transition: 1s;
+    }
+
+}
+
+.stu{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.09)), url(images/hades.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.text-box-stu{
+    width:90%;
+    color: aqua;
+    position: absolute;
+    margin:auto;
+    top: 28%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    text-shadow: 5px 5px 9px hotpink, 5px 5px 9px hotpink;
+
+}
+.me{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.09)), url(images/high_five.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+}
+.text-box-me{
+    width:90%;
+    color: blueviolet;
+    position: absolute;
+    margin:auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    font-size: 200px;
+    text-shadow: 5px 5px 9px black, 5px 5px 9px black;
+}
